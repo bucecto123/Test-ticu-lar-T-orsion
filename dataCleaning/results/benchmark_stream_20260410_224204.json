@@ -1,0 +1,8 @@
+{
+    "run_timestamp": "20260410_224204",
+    "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+    "epsilon": 5.263064,
+    "total_flows": 691406,
+    "throughput_flows_per_sec": 8968.81,
+    "elapsed_seconds": 77.09
+}

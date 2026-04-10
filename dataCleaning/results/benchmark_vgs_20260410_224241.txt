@@ -1,0 +1,25 @@
+SUBSPACE AEGIS — VECTOR-GROUNDING SCORE (VGS) REPORT
+Run: 20260410_224241
+Dataset: Wednesday-workingHours.pcap_ISCX.csv
+Samples per class: 10
+
+============================================================
+METRIC 2: VECTOR-GROUNDING SCORE (VGS)
+============================================================
+Total samples evaluated : 50
+
+Force Grounding Score    : 1.0000  (50/50)
+Residual Grounding Score : 0.6200  (31/50)
+State Grounding Score    : 1.0000  (50/50)
+
+OVERALL VGS              : 0.8733
+
+Class                                  n   Force  Residual   State
+-----------------------------------------------------------------
+DoS slowloris                         10   1.000     0.600   1.000
+DoS Slowhttptest                      10   1.000     0.800   1.000
+DoS Hulk                              10   1.000     0.700   1.000
+DoS GoldenEye                         10   1.000     0.600   1.000
+Heartbleed                            10   1.000     0.400   1.000
+
+No force hallucinations detected.

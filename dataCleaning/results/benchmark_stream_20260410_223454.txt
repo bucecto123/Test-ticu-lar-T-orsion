@@ -1,0 +1,35 @@
+SUBSPACE AEGIS — STREAM BENCHMARK REPORT
+Run: 20260410_223454
+Total flows: 691,406
+Elapsed: 77.8s
+Throughput: 8885 flows/sec
+
+ARM 1: SVD
+              precision    recall  f1-score   support
+
+      BENIGN     0.7442    0.9864    0.8484    439683
+      ATTACK     0.9448    0.4079    0.5698    251723
+
+    accuracy                         0.7758    691406
+   macro avg     0.8445    0.6972    0.7091    691406
+weighted avg     0.8173    0.7758    0.7470    691406
+
+ARM 2: Monoid
+              precision    recall  f1-score   support
+
+      BENIGN     0.6355    0.9934    0.7752    439683
+      ATTACK     0.2979    0.0049    0.0096    251723
+
+    accuracy                         0.6335    691406
+   macro avg     0.4667    0.4991    0.3924    691406
+weighted avg     0.5126    0.6335    0.4964    691406
+
+COMBINED
+              precision    recall  f1-score   support
+
+      BENIGN     0.7446    0.9810    0.8466    439683
+      ATTACK     0.9256    0.4122    0.5703    251723
+
+    accuracy                         0.7739    691406
+   macro avg     0.8351    0.6966    0.7085    691406
+weighted avg     0.8105    0.7739    0.7460    691406

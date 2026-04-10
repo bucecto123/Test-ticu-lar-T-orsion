@@ -1,0 +1,49 @@
+{
+    "run_timestamp": "20260410_224241",
+    "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+    "samples_per_class": 10,
+    "total_samples": 50,
+    "metric_2_vgs": {
+        "force_grounding_score": 1.0,
+        "residual_grounding_score": 0.62,
+        "state_grounding_score": 1.0,
+        "overall_vgs": 0.873333
+    },
+    "per_class": {
+        "DoS slowloris": {
+            "n": 10,
+            "force_grounding": 1.0,
+            "residual_grounding": 0.6,
+            "state_grounding": 1.0,
+            "hallucinations": []
+        },
+        "DoS Slowhttptest": {
+            "n": 10,
+            "force_grounding": 1.0,
+            "residual_grounding": 0.8,
+            "state_grounding": 1.0,
+            "hallucinations": []
+        },
+        "DoS Hulk": {
+            "n": 10,
+            "force_grounding": 1.0,
+            "residual_grounding": 0.7,
+            "state_grounding": 1.0,
+            "hallucinations": []
+        },
+        "DoS GoldenEye": {
+            "n": 10,
+            "force_grounding": 1.0,
+            "residual_grounding": 0.6,
+            "state_grounding": 1.0,
+            "hallucinations": []
+        },
+        "Heartbleed": {
+            "n": 10,
+            "force_grounding": 1.0,
+            "residual_grounding": 0.4,
+            "state_grounding": 1.0,
+            "hallucinations": []
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "run_timestamp": "20260410_215354",
+    "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+    "epsilon": 5.263064,
+    "metric_1_spectral_snr": {
+        "benign_baseline": {
+            "n": 439683,
+            "mean_residual": 1.176155,
+            "std_residual": 1.044795
+        },
+        "per_class": {
+            "DoS GoldenEye": {
+                "n": 10293,
+                "mean_residual": 3.174043,
+                "snr": 2.69866,
+                "cohens_d": 1.199562
+            },
+            "DoS Hulk": {
+                "n": 230124,
+                "mean_residual": 3.939188,
+                "snr": 3.349207,
+                "cohens_d": 1.375477
+            },
+            "DoS Slowhttptest": {
+                "n": 5499,
+                "mean_residual": 6.308549,
+                "snr": 5.363703,
+                "cohens_d": 1.975328
+            },
+            "DoS slowloris": {
+                "n": 5796,
+                "mean_residual": 3.118718,
+                "snr": 2.651621,
+                "cohens_d": 0.997561
+            },
+            "Heartbleed": {
+                "n": 11,
+                "mean_residual": 8.487594,
+                "snr": 7.216387,
+                "cohens_d": 8.069292
+            }
+        },
+        "overall_snr": 3.350721
+    },
+    "metric_3_thermodynamic_efficiency": {
+        "total_flows": 691406,
+        "flows_dropped": 252470,
+        "flows_routed_to_llm": 438936,
+        "pct_dropped": 36.5154,
+        "efficiency_ratio": 1.5752,
+        "tokens_subspace_aegis": 153627600,
+        "tokens_naive_llm": 241992100,
+        "token_savings_pct": 36.5154,
+        "cost_subspace_aegis_usd": 15.36276,
+        "cost_naive_llm_usd": 24.19921
+    },
+    "bonus_false_positive_rate": {
+        "benign_total": 439683,
+        "benign_flagged": 313120,
+        "fpr": 0.712149
+    }
+}

@@ -1,0 +1,35 @@
+SUBSPACE AEGIS — VECTORIZED BENCHMARK REPORT
+Run: 20260410_220055
+Dataset: Wednesday-workingHours.pcap_ISCX.csv
+Epsilon: 5.2631
+
+============================================================
+METRIC 1: SPECTRAL SNR
+============================================================
+Benign baseline — mean ||w||: 1.1762  std: 1.0448
+
+Class                                     n  mean ||w||       SNR   Cohen d
+---------------------------------------------------------------------------
+DoS GoldenEye                        10,293      3.1740     2.699x     1.200
+DoS Hulk                            230,124      3.9392     3.349x     1.375
+DoS Slowhttptest                      5,499      6.3085     5.364x     1.975
+DoS slowloris                         5,796      3.1187     2.652x     0.998
+Heartbleed                               11      8.4876     7.216x     8.069
+
+Overall SNR (all attacks vs benign): 3.351x
+
+============================================================
+METRIC 3: THERMODYNAMIC EFFICIENCY
+============================================================
+Total flows          : 691,406
+Flows dropped        : 252,669  (36.54%)
+Flows to LLM         : 438,737  (63.46%)
+Efficiency ratio     : 1.58x
+Token savings        : 36.54%
+Cost — Subspace Aegis: $15.3558
+Cost — Naive LLM     : $24.1992
+
+============================================================
+BONUS: FALSE POSITIVE RATE
+============================================================
+Benign flagged: 312,929 / 439,683  FPR = 0.7117
